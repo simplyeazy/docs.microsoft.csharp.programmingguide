@@ -4,9 +4,16 @@ namespace Classes_Example
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Person person1 = new Person();
+            Console.WriteLine(person1.Name);
+            person1.SetName("John Smith");
+            Console.WriteLine(person1.Name);
+
+            Person person2 = new Person("Sarah Jones");
+            Console.WriteLine(person2.Name);
+            Console.ReadKey();
         }
     }
 }
